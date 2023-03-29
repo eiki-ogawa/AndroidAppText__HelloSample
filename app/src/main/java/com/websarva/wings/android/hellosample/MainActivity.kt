@@ -2,7 +2,10 @@ package com.websarva.wings.android.hellosample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         val listener = HelloListener()
         btClick.setOnClickListener(listener)
         btClear.setOnClickListener(listener)
-
-
     }
 
     private inner class HelloListener : View.OnClickListener {
